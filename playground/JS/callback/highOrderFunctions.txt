@@ -1,0 +1,11 @@
+Higher-Order Functions Pada JavaScript:
+
+- Higher-order functions adalah sebuah fungsi yang dapat menerima fungsi lain sebagai parameternya, dan/atau juga mengembalikan sebuah fungsi baru sebagai hasilnya. 
+- Fitur ini sering ditemukan pada bahasa pemrograman yang mendukung paradigma pemrograman fungsional, seperti Haskell, Clojure, OCaml, Scala, dsb. 
+- Beruntung JavaScript termasuk kepada bahasa pemrograman yang mendukung pemrograman imperative dan juga pemrograman fungsional sekaligus, sehingga higher-order functions benar-benar didukung dengan baik
+
+Map, Filter, dan Reduce
+
+- JavaScript memiliki fungsi-fungsi standar yang menerapkan higher-order functions untuk mempermudah dan membuat kode menjadi lebih jelas dan singkat, dibanding jika kita memprogram dengan menggunakan perulangan biasa seperti for dan while.
+
+- Dengan memahami higher-order functions kita dapat membuat kode yang lebih singkat dan lebih terlihat memiliki makna dengan hasil yang sama persis seperti jika kita menggunakan teknik imperative dengan perulangan seperti for dan while.

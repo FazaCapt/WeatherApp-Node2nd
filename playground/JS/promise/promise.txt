@@ -1,0 +1,29 @@
+- Sesuai namanya, Promise dalama Bahasa Indonesia berarti janji. 
+- Promise adalah object yang merepresentasikan nilai hasil dari sebuah operasi asynchronous.
+- Isi dari Promise hanya dapat diketahui ketika Promise tersebut dieksekusi.
+
+Kamu bisa bayangkan dengan cara seperti ini:
+
+- Kamu meminjamkan uang 1 juta Rupiah ke temanmu sebut saja Bunga, lalu Bunga berjanji akan mengembalikan uang tersebut ke kamu di tanggal 1, bulan depan. 
+- Kamu tidak akan pernah tahu apakah Bunga akan dapat membayar hutangnya atau gagal membayar selama tidak kamu tagih. 
+- Pada saat tanggal 1, bulan depan, kamu menagih janji Bunga, pada saat itu lah kamu akan mengetahui apakah uangmu akan kembali atau tidak.
+
+- Promise, seperti object lainnya di JavaScript, dapat kamu passing sebagai parameter ke fungsi lain. Dengan analogi hutang di atas, kamu bisa bayangkan lagi kasus seperti ini:
+
+- Setelah kamu meminjamkan uang 1 juta Rupiah kepada Bunga, tiba-tiba ada temanmu yang lain, sebut saja Lebah, datang pada tanggal 31 (sehari sebelum janji Bunga mengembalikan uang) dan berkata, “bolehkah aku pinjam uang 1 juta?” Lalu kamu berkata, “boleh, tapi besok ya? Uangku sedang dipinjam Bunga. 
+- Besok dia akan mengembalikan. 
+- Kalau mau kamu bisa minta langsung ke dia besok. Bilang saja disuruh aku.”
+
+Kamu sudah melemparkan object janji Bunga kepada Lebah, tanpa kamu tahu isi dari object tersebut akan sukses atau gagal.
+
+Promise memiliki 3 kondisi nilai balik:
+
+- Pending, pada kondisi ini nilai balik belum dapat ditentukan karena operasi asynchronous belum selesai. 
+- Dengan analogi hutang di atas, ini adalah kondisi saat kamu baru saja meminjamkan uangmu.
+    
+- Fulfilled, operasi asynchronous sudah selesai dan Promise memiliki nilai. 
+- Ini adalah kondisi saat temanmu sukses membayar hutangnya.
+
+- Rejected, operasi asynchronous gagal diselesaikan. 
+- Nilai balik dari Promise tersebut isinya alasan kenapa operasi gagal diselesaikan. Sama seperti saat kamu menagih hutang temanmu dan dia gagal bayar, maka dia akan memberikan alasan.
+

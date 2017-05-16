@@ -1,0 +1,51 @@
+ Konsep Callback di Node JS
+
+ - Callback adalah asynchronous yang ekivalen dengan function. 
+ - fungsi Callback akan dipanggil saat penyelesaian tugas yang diberikan. 
+ Node JS banyak menggunakan Callback. 
+ - Semua API pada Node JS ditulis sedemikian rupa sehingga mereka mendukung Callback. Misalnya dalam pembacaan file.
+
+ - Sebuah fungsi untuk membaca file dapat dimulai dengan membaca file lalu mengembalikan kontrol ke lingkungan eksekusi segera, sehingga intruksi berikutnya dapat dilaksanakan.
+ - Setelah selesai memproses I/O, ia akan memanggil fungsi Callback. 
+ - jadi dalam konsep ini tidak ada pemblokiran atau menunggu selesainya proses I/O. 
+ - hal inilah yang membuat Node JS sangat Scalable, karena dapat memproses sejumlah permintaan tanpa menunggunya menyelesaikan yang diberikan.
+
+ - Penjelasan sederhana tentang bagaimana Asyncronous dan Synchronous bekerja pada javascript
+
+ - Perkenalkan Paijo !
+     Membeli Gula
+     Membeli Kopi
+     Memasak Air
+     Mengambil gelas
+     Menuangkan Kopi secukupnya
+     Menuangkan Gula secukupnya
+     Dll
+
+ - Karena kamu hanya memiliki satu pembantu maka tugas yang kamu berikan diatas hanya dilakukan oleh paijo, maka kita adalah Single Threaded tapi jika kita memiliki lebih dari satu pembantu maka kita disebut Multi Threaded.
+ - Javascript adalah bahasa pemograman yang Single Threaded
+
+ Single Threaded
+ - Karena Javascript adalah Single Threaded maka javascript hanya dapat menghandle satu tugas pada satu waktu dan dapat melanjutkan tugas yang lain ketika tugas sebelumnya telah selesai, hal ini disebut dengan Blocking
+
+ Masalah?
+ - Masalah yang terdapat pada Single Threaded adalah ia memakan banyak waktu tidak berguna yaitu menunggu sebuah proses selesai untuk mengerjakan proses yang lain, padahal kita dapat menunggu proses yang belum selesai sambil mengerjakan proses yang lain bukan ?
+
+ Kemudian lahirlah Asynchronous :)
+
+ Asynchronous dan Event Loop
+ - Saat paijo memasak air tentu memakan cukup banyak waktu hingga air yang ia masak mendidih, maka dari itu selama menunggu ia dapat mengerjakan tugas yang lain seperti menyiapkan gelas dan menuangkan kopi serta gula. inilah yang disebut asynchronous.
+ Sementara itu, setelah air mendidih tentu Paijo harus mematikan kompor dan menuang air yang telah mendidih tadi, maka dari itu Paijo harus mengecek air yang ia masak setiap beberapa saat! maka tugas ini pada javascript disebut Event Loop
+ Asynchronous juga membuat background task yang disebut Event Loop untuk mengecek dan mengatur proses yang telah selesai.
+
+ Callback
+ - Secara default Javascript melakukan tugas secara Asynchronous yang berarti setiap tugas tidak dijalankan secara berurutan namun dikerjakan berdasarkan yang tercepat.
+ Masalahnya adalah jika terjadi pada contoh kasus Paijo yang membuat kopi, dimana proses memasak air membutuhkan waktu cukup lama dibanding yang lain maka akan terjadi proses mengaduk kopi padahal air belum mendidih, tentu hal ini mustahil dan dalam program akan terjadi error.
+ - Jadi kita tetap harus mengurutkan beberapa pekerjaan atau membuat Teknik Synchronous.
+ Callback adalah teknik memasangkan beberapa tugas agar berjalan berurutan
+
+ - Callback digunakan untuk mengurutkan proses agar tidak terjadi lagi kasus seperti menampilkan hasil padahal belum mendapatkan hasil.
+
+ - Callback: Jalankan proses ini setelah proses itu selesai
+
+ Kesimpulan
+ - Javascript adalah bahasa Asynchronous namun terkadang kita juga butuh Synchronous agar tidak terjadi overlap process dan Callback adalah metode untuk melakukan Synchronous pada Asynchronous.
