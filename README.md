@@ -1,22 +1,4 @@
-Silabus:
-
-1. Section intro 
-2. Async Basics 7:51
-3. Call Stack & Event Loop 12:20
-4. Callback Functions & APIs 16:12
-5. Pretty Printing Objects 2:44
-6. What's Makes up an HTTP Request? 13:26
-7. Encoding User Input 13:47
-8. Callback Errors 9:15
-9. Abstracting Callbacks 12:38ip
-10. Wiring Up Weather Search 13:39
-11. Chaining Callbacks Together 17:15
-12. Intro to ES6 Promises 12:36
-13. Advanced Promises 17:38
-14. Weather App With Promises 17:29
-15. Extra Features 
-
-cara penggunaannya:
+#### cara penggunaannya:
 1. node app-promise.js -a '12345' (nama tempat)
 
 Step:
@@ -32,7 +14,7 @@ Step:
 10. npm install axios 'https://www.npmjs.com/package/axios'
 
 
-Penjelasan / Pengertian:
+#### Penjelasan / Pengertian:
 
 1. Queue: sekumpulan data yang mana penambahan elemen hanya bisa dilakukan pada suatu ujung disebut dengan sisi belakang(rear), dan penghapusan(pengambilan elemen) dilakukan lewat ujung lain (disebut dengan sisi depan atau front). 
 - Pada Stack atau tumpukan menggunakan prinsip LIFO (Last In First Out) atau FIFO (First In First Out).
